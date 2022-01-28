@@ -1,0 +1,218 @@
+body {
+    background: var(--very-light-gray);
+    min-height: 100vh;
+}
+body, body p, textarea, input, .btn {
+    font-family: 'Rubik', Avenir, Helvetica, Arial, sans-serif;
+    line-height: 24px;
+    color: var(--grayish-blue);
+    font-size: var(--main-font-size);
+}
+p {
+    margin: 0
+}
+h2 {
+    color: var(--dark-blue);
+    padding-bottom: 2rem;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.form_login_card {
+    text-align: center;
+}
+.form_group {
+    margin: 1rem auto;
+    position: relative;
+}
+.form_group.row {
+    align-items: center;
+}
+.form_group.row p {
+    padding: 0 1rem 0 0;
+}
+.form_control {
+    margin: 0;
+    padding: 0.4rem;
+    width: 98%;
+    height: 40px
+}
+.relative {
+    position: relative;
+}
+.container {
+    max-width: 730px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 51px 0 57px
+}
+.card {
+    background: var(--white);
+    margin-top: 20px;
+    padding: 24px;
+    border-radius: 8px;
+}
+.row, .author, .avatar {
+    display: flex;
+}
+.comment_container .card.row {
+    align-items: flex-start;
+}
+.score {
+    border-radius: 10px;
+    background: var(--very-light-gray);
+    margin-right: 3.52%;
+    flex: 1 0 40px;
+    height: 100px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center !important;
+}
+.btn.vote, .btn.reply_button, .btn.delete_button {
+    width: auto;
+    padding: 0
+}
+.btn.reply_button, .btn.delete_button {
+    display: flex;
+    align-items: center;
+}
+.btn.reply_button span, .btn.delete_button span {
+    display: flex;
+    align-items: center;
+    padding-right: 8px;
+    line-height: 0;
+}
+.comment_score {
+    color: var(--moderate-blue);
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: var(--medium);
+    font-size: 16px;
+    line-height: 19px;
+}
+.col.comment {
+    width: 91%;
+}
+.author.row, .author {
+    justify-content: space-between;
+    align-items: center !important;
+}
+.avatar img {
+    margin: auto;
+    border-radius: 50%;
+}
+.username {
+    color: var(--dark-blue);
+    margin: 0 16px;
+}
+.comment_content {
+    margin-top: 19px;
+}
+.replying_to {
+    color: var(--moderate-blue);
+}
+.delete_button {
+    margin-right: 24px;
+}
+.username, .reply_button, .delete_button, .replying_to {
+    font-weight: var(--medium);
+    width: auto;
+}
+.reply_button, .delete_button {
+    text-transform: capitalize
+}
+.badge {
+    margin: 0 16px 0 -8px;
+    background-color: var(--moderate-blue);
+    color: var(--white);
+    padding: 1px 6px 3px 6px;
+    border-radius: 2px;
+    line-height: 15.41px;
+    font-size: 13px;
+}
+.reply_container {
+    margin-left: 6.029%;
+    padding-left: 6.029%;
+    position: relative;
+}
+.reply_container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 96.14%;
+    background-color: var(--light-gray);
+}
+.comment_form {
+    display: flex;
+    align-items: flex-start;
+}
+.comment_form .btn-primary {
+    flex: 1 0 104px;
+}
+.reply_card {
+    padding-right: 0;
+}
+.reply_card .col.form {
+    width: 85.75%
+}
+.logged_user_img {
+    margin-top: 4px;
+}
+textarea, input {
+    border-radius: 8px;
+    padding: 12px 24px;
+    margin: 0 16px;
+    flex: 1 0 75.33%;
+    height: 70px;
+    border: 1px solid var(--light-gray);
+    resize: none;
+    outline: none;
+    cursor: pointer;
+    transition: all .3s;
+}
+.replies .col.form textarea {
+    flex: 1 0 69.45%
+}
+.edit_comment_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: 100%;
+}
+.edit_comment_form textarea {
+    flex: 1 0 98px;
+    width: 90.043%;
+    margin: 15px 0 16px 0;
+}
+.comments .edit_comment_form textarea {
+    width: 91.91%;
+}
+textarea:focus, textarea:hover, input:focus, input:hover {
+    border: 1px solid var(--moderate-blue);
+}
+.response_message {
+    text-align: center;
+    font-weight: var(--medium);
+}
+.error {
+    color: var(--soft-red);
+}
+.success {
+    color: var(--moderate-blue);
+}
+.delete_modal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media screen and (max-width: 730px) {
+    .container {
+        width: 91.46%;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,24 @@
+.wrapper, .switch {
+    position: relative;
+    cursor: pointer;
+}
+.switch {
+    position: absolute;
+    top: 0;
+    border: none;
+    margin: 0;
+    padding: 0;
+    opacity: 1 !important;
+    height: 30px;
+    width: 24px;
+    top: -0.2rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: transparent !important;
+    appearance: none;
+    -webkit-appearance: none;
+}
+.switch:focus {
+    border:none
+}

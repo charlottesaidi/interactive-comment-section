@@ -1,0 +1,39 @@
+body[theme=dark], body[theme=dark] p, body[theme=dark] textarea, body[theme=dark] input, body[theme=dark] .btn {
+    color: var(--very-light-gray)
+}
+body[theme=dark], body[theme=dark] .score {
+    background: var(--very-dark-gray)
+}
+body[theme=dark] .card, body[theme=dark] textarea, body[theme=dark] input, body[theme=dark] .reply_container::before {
+    background: var(--dark-blue)
+}
+body[theme=dark] .username, body[theme=dark] router-link.reply_button {
+    color: var(--moderate-gray) !important
+}
+body[theme=dark] .feather-sun, body[theme=dark] .feather-sun path, body[theme=dark] .feather-user, body[theme=dark] .feather-user path {
+    stroke: var(--light-moderate-blue);
+}
+body[theme=dark] .reply_icon .feather, body[theme=dark] .reply_icon .feather path, body[theme=dark] .logout_icon svg, body[theme=dark] .logout_icon svg path, body[theme=dark] .edit_icon .feather path {
+    fill: var(--light-moderate-blue);
+    stroke: none;
+}
+body[theme=dark] .comment_score, body[theme=dark] .reply_button, body[theme=dark] .replying_to {
+    color: var(--light-moderate-blue) !important;
+}
+body[theme=dark] .btn-primary {
+    background: var(--light-moderate-blue)
+}
+body[theme=dark] .btn-primary:hover {
+    background: var(--moderate-blue)
+} 
+body[theme=dark] .custom-file-input, body[theme=dark] .custom-file-input:hover {
+    color: transparent;
+    background: transparent;
+}
+body[theme=dark] .feather-upload {
+    stroke: var(--grayish-blue); 
+}
+body[theme=dark] .feather-home {
+    fill: none;
+    stroke: var(--light-moderate-blue); 
+}

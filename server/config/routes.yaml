@@ -1,0 +1,85 @@
+controllers:
+    resource: ../src/Controller/
+    type: annotation
+
+kernel:
+    resource: ../src/Kernel.php
+    type: annotation
+
+api_register:
+    path: /api/register
+    controller: App\Controller\RegistrationController::register
+    methods: POST
+
+api_login_check:
+    path: /api/login_check
+    
+token:
+    path: /api/token
+    controller: App\Controller\UserController::getToken
+    methods: GET
+
+users:
+    path: /api/users
+    controller: App\Controller\UserController::index
+    methods: GET
+
+comments:
+    path: /api/comments
+    controller: App\Controller\CommentController::index
+    methods: GET
+
+comment:
+    path: /api/comment/{id}
+    controller: App\Controller\CommentController::getOne
+    methods: GET
+
+comments_new:
+    path: /api/new-comment
+    controller: App\Controller\CommentController::new
+    methods: POST
+
+comments_delete:
+    path: /api/delete-comment/{id}
+    controller: App\Controller\CommentController::delete
+    methods: DELETE
+
+comments_edit:
+    path: /api/edit-comment/{id}
+    controller: App\Controller\CommentController::edit
+    methods: POST
+
+comments_vote:
+    path: /api/vote-comment/{id}
+    controller: App\Controller\CommentController::vote
+    methods: POST
+
+replies:
+    path: /api/replies
+    controller: App\Controller\ReplyController::index
+    methods: GET
+
+reply:
+    path: /api/reply/{id}
+    controller: App\Controller\ReplyController::getOne
+    methods: GET
+
+reply_new:
+    path: /api/new-reply
+    controller: App\Controller\ReplyController::new
+    methods: POST
+
+reply_delete:
+    path: /api/delete-reply/{id}
+    controller: App\Controller\ReplyController::delete
+    methods: DELETE
+
+reply_edit:
+    path: /api/edit-reply/{id}
+    controller: App\Controller\ReplyController::edit
+    methods: POST
+
+reply_vote:
+    path: /api/vote-reply/{id}
+    controller: App\Controller\ReplyController::vote
+    methods: POST
